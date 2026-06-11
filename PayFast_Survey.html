@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>PayFast Survey</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-color:#89cff0;
+        }
+
+        h1{
+            font-size:90px;
+            margin-top:40px;
+            text-align:center;
+        }
+
+        h3{
+            text-align:center;
+            margin-bottom:40px;
+            font-size:35px;
+        }
+
+        .survey-box{
+            max-width:750px;
+            margin:auto;
+            padding-bottom:50px;
+        }
+
+        label{
+            font-size:28px;
+            margin-bottom:8px;
+        }
+
+        .form-control,
+        .form-select{
+            background:#ffd200;
+            border:none;
+            border-radius:30px;
+            min-height:50px;
+        }
+
+        textarea.form-control{
+            resize:none;
+        }
+
+        .form-range{
+            margin-top:10px;
+        }
+
+        .btn-save{
+            background:#ffd200;
+            border:none;
+            border-radius:30px;
+            font-size:30px;
+            padding:10px 40px;
+            width:100%;
+            margin-top:20px;
+        }
+
+        .btn-save:hover{
+            background:#ffcc00;
+        }
+
+        .logo{
+            text-align:center;
+            margin-top:50px;
+        }
+
+        .logo img{
+            width:100px;
+            height:100px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Quick Survey</h1>
+
+    <h3>Help us improve PayFast</h3>
+
+    <div class="survey-box">
+
+        <form action="PayFast_Hello_User.html">
+
+            <div class="mb-4">
+                <label>Your Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+
+            <div class="mb-4">
+                <label>Your Age</label>
+                <input type="number" class="form-control" required>
+            </div>
+
+            <div class="mb-4">
+                <label>Date of Birth</label>
+                <input type="date" class="form-control">
+            </div>
+
+            <div class="mb-4">
+                <label>Your Feedback</label>
+                <textarea class="form-control" rows="4"></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label>Favorite Currency</label>
+
+                <select class="form-select">
+                    <option>USD</option>
+                    <option>EURO</option>
+                    <option>AUD</option>
+                    <option>CAD</option>
+                    <option>DBP</option>
+					<option>INR</option>
+					<option>KWD</option>
+					<option>TURLIRA</option>
+					<option>YEN</option>
+					<option>YUAN</option>
+                </select>
+            </div>
+
+            <div class="mb-4">
+
+                <label>Would you recommend PayFast?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend">
+                    <label class="form-check-label">Yes</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend">
+                    <label class="form-check-label">Maybe</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommend">
+                    <label class="form-check-label">No</label>
+                </div>
+
+            </div>
+
+            <div class="mb-4">
+
+                <label>Rate your experience</label>
+
+                <input type="range" class="form-range" min="1" max="10">
+
+            </div>
+
+            <div class="form-check mb-4">
+
+                <input class="form-check-input" type="checkbox">
+
+                <label class="form-check-label">
+                    I agree that my feedback may be used to improve PayFast.
+                </label>
+
+            </div>
+
+            <button type="submit" class="btn btn-save">
+                Submit Survey
+            </button>
+
+        </form>
+
+        <div class="logo">
+
+            <a href="PayFast_Hello_User.html">
+                <img src="PayFastLogo.png" alt="PayFast Logo">
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
